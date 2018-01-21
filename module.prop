@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
+id=oosnativecallrecordingenabler
+name=OOS Native Call Recording Enabler
+version=v3.0
+versionCode=30
+author=@shadowstep at xda-developers
+description=This module enables the native call recording feature on OxygenOS (and ROMs based on it)
 minMagisk=1500

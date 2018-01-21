@@ -5,3 +5,5 @@ MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
 # More info in the main Magisk thread
+sleep 120
+settings put global op_voice_recording_supported_by_mcc 1
