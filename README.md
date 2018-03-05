@@ -23,3 +23,6 @@ v3.0
 
 v4.0
 - Reduced the script execution delay from 2 minutes post boot to 10 seconds post boot
+
+v4.1
+- Slightly increased the script execution delay from 10 seconds post boot to 30 seconds post boot to fix issues some users reported
