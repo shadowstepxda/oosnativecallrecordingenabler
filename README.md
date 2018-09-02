@@ -19,6 +19,9 @@ This module enables the native call recording feature on OxygenOS (and ROMs base
 ### v4.1
 - Slightly increased the script execution delay from 10 seconds post boot to 30 seconds post boot to fix issues some users reported
 
+### v4.2
+- Update for Magisk v17.0 (Template version 17000)
+
 ## Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/OOSNativeCallRecordingEnabler)
 * [Support](https://forum.xda-developers.com/oneplus-5/themes/app-enable-call-recording-boot-t3634292)
