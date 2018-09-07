@@ -1,4 +1,4 @@
-# OOSNativeCallRecordingEnabler [![Magisk](https://img.shields.io/badge/Magisk-14%2B-00B39B.svg?style=flat-square)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445) [![Forum](https://img.shields.io/badge/XDA-Forums-f59714.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/app-enable-call-recording-boot-t3634292)
+# OOSNativeCallRecordingEnabler [![Magisk](https://img.shields.io/badge/Magisk-17%2B-00B39B.svg?style=flat-square)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445) [![Forum](https://img.shields.io/badge/XDA-Forums-f59714.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/app-enable-call-recording-boot-t3634292)
 
 ## Information
 This module enables the native call recording feature on OxygenOS (and ROMs based on it). This is achieved by simply changing a hidden secure setting on OxygenOS (and ROMs based on it), at every boot, since the setting is reset everytime the phone is restarted.
