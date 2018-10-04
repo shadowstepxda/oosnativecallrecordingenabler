@@ -7,3 +7,11 @@ MODDIR=${0%/*}
 # More info in the main Magisk thread
 sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
+sleep 30
+settings put global op_voice_recording_supported_by_mcc 1
+sleep 30
+settings put global op_voice_recording_supported_by_mcc 1
+sleep 30
+settings put global op_voice_recording_supported_by_mcc 1
+sleep 30
+settings put global op_voice_recording_supported_by_mcc 1
