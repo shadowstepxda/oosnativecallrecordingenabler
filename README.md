@@ -19,8 +19,11 @@ This module enables the native call recording feature on OxygenOS (and ROMs base
 ### v4.1
 - Slightly increased the script execution delay from 10 seconds post boot to 30 seconds post boot to fix issues some users reported
 
-### v4.2
+### v5.0
 - Update for Magisk v17.0 (Template version 17000)
+
+### v5.1
+- Made the script execute the command 5 times at an interval of 30 seconds after boot to try and alleviate some issues that a few people have been having with call recording getting disabled after a while
 
 ## Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/OOSNativeCallRecordingEnabler)
