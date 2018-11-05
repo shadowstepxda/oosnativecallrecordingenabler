@@ -15,3 +15,9 @@ sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
 sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
+
+while :
+do
+	sleep 60
+	settings put global op_voice_recording_supported_by_mcc 1
+done
