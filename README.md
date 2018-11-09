@@ -28,6 +28,9 @@ This module enables the native call recording feature on OxygenOS (and ROMs base
 ### v5.2
 - Made the script execute the command every minute infinitely post the initial run as another attempt to try and alleviate some issues that a few people have been having with call recording getting disabled after a while (credits to @inggaro for the idea)
 
+### v5.3
+- Updated the script to make the infinite loop run asynchronously to resolve conflicts some users reported (credits to @Zackptg5 for the suggestion)
+
 ## Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/OOSNativeCallRecordingEnabler)
 * [Support](https://forum.xda-developers.com/oneplus-5/themes/app-enable-call-recording-boot-t3634292)
