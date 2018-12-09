@@ -34,6 +34,9 @@ This module enables the native call recording feature on OxygenOS (and ROMs base
 ### v5.4
 - Reverted changes made in v5.2 and v5.3 as most of the users preferred and had no issues with v5.1
 
+### v6.0
+- Fixed call recording automatically getting disabled after a while (credits to @My Name is ShaoXIa for the idea)
+
 ## Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/OOSNativeCallRecordingEnabler)
 * [Support](https://forum.xda-developers.com/oneplus-5/themes/app-enable-call-recording-boot-t3634292)

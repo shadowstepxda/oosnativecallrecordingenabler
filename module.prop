@@ -1,7 +1,7 @@
 id=oosnativecallrecordingenabler
 name=OOS Native Call Recording Enabler
-version=v5.4
-versionCode=54
+version=v6.0
+versionCode=60
 author=@shadowstep at xda-developers
 description=This module enables the native call recording feature on OxygenOS (and ROMs based on it)
 minMagisk=17000
