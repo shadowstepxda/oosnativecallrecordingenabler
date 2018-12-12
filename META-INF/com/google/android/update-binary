@@ -107,6 +107,16 @@ mkdir -p $MODPATH
 # Extract files to system. Use your own method if needed
 ui_print "- Extracting module files"
 unzip -o "$ZIP" 'system/*' -d $MODPATH >&2
+## add by shaoxia , run Once.For major updates to the system, you need to reinstall the plug-in once.
+mkdir -p $MODPATH/system/priv-app/TeleService
+cp -r /system/priv-app/TeleService/* $MODPATH/system/priv-app/TeleService
+sleep 5
+if [ -f "$MODPATH/system/priv-app/TeleService/TeleService.apk" ];then
+	ui_print "Good news, copy files successfully"
+else
+	abort "!Unsuccessful duplication of files"
+fi
+sed -i "s/op_voice_recording_supported_by_mcc/op_voice_recording_suppt_by_shaoxia/g" $MODPATH/system/priv-app/TeleService/TeleService.apk
 
 # Remove placeholder
 rm -f $MODPATH/system/placeholder 2>/dev/null
