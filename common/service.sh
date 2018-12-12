@@ -7,16 +7,11 @@ MODDIR=${0%/*}
 # More info in the main Magisk thread
 sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
-pm disable com.android.phone/com.android.phone.oneplus.OPSimSubSettingsActivity
 sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
-pm disable com.android.phone/com.android.phone.oneplus.OPSimSubSettingsActivity
 sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
-pm disable com.android.phone/com.android.phone.oneplus.OPSimSubSettingsActivity
 sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
-pm disable com.android.phone/com.android.phone.oneplus.OPSimSubSettingsActivity
 sleep 30
 settings put global op_voice_recording_supported_by_mcc 1
-pm disable com.android.phone/com.android.phone.oneplus.OPSimSubSettingsActivity
