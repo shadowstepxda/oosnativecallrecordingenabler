@@ -23,22 +23,26 @@ This module enables the native call recording feature on OxygenOS (and ROMs base
 - Update for Magisk v17.0 (Template version 17000)
 
 ### v5.1
-- Made the script execute the command 5 times at an interval of 30 seconds after boot to try and alleviate some issues that a few people have been having with call recording getting disabled after a while (credits to @My Name is ShaoXIa for the idea)
+- Made the script execute the command 5 times at an interval of 30 seconds after boot to try and alleviate some issues that a few people have been having with call recording getting disabled after a while
 
 ### v5.2
-- Made the script execute the command every minute infinitely post the initial run as another attempt to try and alleviate some issues that a few people have been having with call recording getting disabled after a while (credits to @inggaro for the idea)
+- Made the script execute the command every minute infinitely post the initial run as another attempt to try and alleviate some issues that a few people have been having with call recording getting disabled after a while
 
 ### v5.3
-- Updated the script to make the infinite loop run asynchronously to resolve conflicts some users reported (credits to @Zackptg5 for the suggestion)
+- Updated the script to make the infinite loop run asynchronously to resolve conflicts some users reported
 
 ### v5.4
 - Reverted changes made in v5.2 and v5.3 as most of the users preferred and had no issues with v5.1
 
 ### v6.0
-- Fixed call recording automatically getting disabled after a while (credits to @My Name is ShaoXIa for the idea)
+- Fixed call recording automatically getting disabled after a while
 
 ### v6.1
-- Reverted the last change which broke the SIM settings menu for multiple people, as reported in the XDA thread
+- Reverted the last change which caused SIM settings force closes
+
+### v7.0
+- Fixed call recording automatically getting disabled after a while
+- Fixed the SIM settings force close issue that was caused by the release of v6.0
 
 ## Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/OOSNativeCallRecordingEnabler)

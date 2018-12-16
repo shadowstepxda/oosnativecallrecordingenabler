@@ -22,7 +22,7 @@
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
-AUTOMOUNT=false
+AUTOMOUNT=true
 
 # Set to true if you need to load system.prop
 PROPFILE=false
@@ -86,6 +86,7 @@ set_permissions() {
 
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
+  set_perm_recursive  $MODPATH/system/priv-app/TeleService  0  0  0755  0644
 }
 
 ##########################################################################################

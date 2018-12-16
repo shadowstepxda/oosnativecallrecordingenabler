@@ -108,6 +108,17 @@ mkdir -p $MODPATH
 ui_print "- Extracting module files"
 unzip -o "$ZIP" 'system/*' -d $MODPATH >&2
 
+# Hack to prevent removal of native call recording
+mkdir -p $MODPATH/system/priv-app/TeleService
+cp -r /system/priv-app/TeleService/* $MODPATH/system/priv-app/TeleService
+sleep 5
+if [ -f "$MODPATH/system/priv-app/TeleService/TeleService.apk" ];then
+	ui_print "Files copied successfully!"
+else
+	abort "Files not copied, error!"
+fi
+sed -i "s/op_voice_recording_supported_by_mcc/op_voice_recording_suppt_by_shaoxia/g" $MODPATH/system/priv-app/TeleService/TeleService.apk
+
 # Remove placeholder
 rm -f $MODPATH/system/placeholder 2>/dev/null
 
