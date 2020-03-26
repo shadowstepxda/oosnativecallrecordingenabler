@@ -1,4 +1,4 @@
-# OOS Native Call Recording Enabler ![Forum](https://img.shields.io/badge/XDA-Forum-f59714.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/app-enable-call-recording-boot-t3634292)
+# OOS Native Call Recording Enabler [![Forum](https://img.shields.io/badge/XDA-Forum-f59714.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/app-enable-call-recording-boot-t3634292)
 
 ## Function
 This module enables the native call recording feature on OxygenOS (and ROMs based on it).
