@@ -1,15 +1,5 @@
-# Define variable(s)
-[ -L /system/vendor ] && VEN=/vendor || VEN=/system/vendor
-
-# Define function(s)
-manufacturer_check() {
-  local PROP=$(echo "$1" | tr '[:upper:]' '[:lower:]')
-  [ "$(sed -n "s/^ro.product.manufacturer=//p" /system/build.prop 2>/dev/null | head -n 1 | tr '[:upper:]' '[:lower:]')" == "$PROP" -o "$(sed -n "s/^ro.product.manufacturer=//p" $VEN/build.prop 2>/dev/null | head -n 1 | tr '[:upper:]' '[:lower:]')" == "$PROP" ] && return 0
-  return 1
-}
-
 # Core installation
-if manufacturer_check "OnePlus"; then
+if device_check -m "OnePlus"; then
   ui_print " "
   ui_print "- Manufacturer detected: OnePlus"
   ui_print " "
@@ -19,7 +9,7 @@ if manufacturer_check "OnePlus"; then
   sleep 3
   if [ -f "$MODPATH/system/priv-app/TeleService/TeleService.apk" ]; then
     ui_print " "
-	ui_print "- APK copied to the module folder"
+    ui_print "- APK copied to the module folder"
   else
     ui_print " "
     abort "! ERROR: APK couldn't be copied to the module folder"
