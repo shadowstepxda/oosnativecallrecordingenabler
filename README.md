@@ -7,6 +7,9 @@ This module enables the native call recording feature on OxygenOS (and ROMs base
 Don't forget to **uninstall** *(not the same as disabling)* the module whenever you're planning on updating OOS or else it might create issues. You have been warned! You can reinstall the module after the update.
 
 ## Changelog
+### v9.2
+- Improve race condition handling at boot
+
 ### v9.1
 - Updated base template to MMT-Ex Template v1.5
 - Fixed manufacturer check
