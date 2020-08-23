@@ -9,6 +9,7 @@ Don't forget to **uninstall** *(not the same as disabling)* the module whenever 
 ## Changelog
 ### v9.2
 - Improve race condition handling at boot
+- Fixed installation failures with Magisk Canary
 
 ### v9.1
 - Updated base template to MMT-Ex Template v1.5

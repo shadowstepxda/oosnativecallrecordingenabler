@@ -35,7 +35,7 @@ device_check() {
   local prop=$(echo "$1" | tr '[:upper:]' '[:lower:]')
   for i in /system /vendor /odm /product; do
     if [ -f $i/build.prop ]; then
-      for j in "ro.product.$type" "ro.build.$type" "ro.product.vendor.$type" "ro.vendor.product.$type"; do
+      for j in "ro.product.$type" "ro.build.$type" "ro.product.vendor.$type" "ro.vendor.product.$type" "ro.build.product"; do
         [ "$(sed -n "s/^$j=//p" $i/build.prop 2>/dev/null | head -n 1 | tr '[:upper:]' '[:lower:]')" == "$prop" ] && return 0
       done
     fi
@@ -119,7 +119,7 @@ prop_process() {
 [ -z $DEBUG ] && DEBUG=false
 [ -e "$PERSISTDIR" ] && PERSISTMOD=$PERSISTDIR/magisk/$MODID
 INFO=$NVBASE/modules/.$MODID-files
-ORIGDIR="$MAGISKTMP/mirror"
+ORIGDIR=$(magisk --path)/.magisk/mirror
 if $DYNLIB; then
   LIBPATCH="\/vendor"
   LIBDIR=/system/vendor
